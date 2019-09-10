@@ -1,8 +1,8 @@
 import React from 'react';
 import './Airport.css';
 import {Location} from './Location';
-import Plane from './Plane';
-import {MenuBar} from './MenuBar';
+import Plane from '../components/Plane';
+import {MenuBar} from '../components/MenuBar';
 
 export class Airport extends React.Component {
   

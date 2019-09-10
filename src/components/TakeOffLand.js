@@ -1,16 +1,5 @@
 import React from 'react';
 
-function Plane(){
-  let isAirbourne = false;
-  return (
-    <div>
-      <h2>Plane</h2>
-      <p>Status: {isAirbourne ? "In-Air" : "Grounded"}</p>
-      <TakeoffLand />
-    </div>
-  );
-}
-
 export class TakeoffLand extends React.Component {
   constructor(props){
     super(props);
@@ -29,5 +18,3 @@ export class TakeoffLand extends React.Component {
     );
   }
 }
-
-export default Plane;
