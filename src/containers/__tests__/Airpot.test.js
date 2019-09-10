@@ -11,4 +11,19 @@ describe('Airport', () => {
             expect(mountedAirport.instance().state.hangerCount).toBe(1);
         });
     });
+
+    describe('generatePlanes', () =>  {
+        it('is initialised with 0 planes', () => {
+            let mountedAirport = shallow(<Airport />);
+            const planes = mountedAirport.find('Plane')
+            expect(planes.length).toBe(0);
+        });
+
+        it('Handles a plane', () => {
+            let mountedAirport = shallow(<Airport />);
+            mountedAirport.setState({hangerCount : 1});
+            const planes = mountedAirport.find('Plane')
+            expect(planes.length).toBe(1);
+        });
+    });
 });

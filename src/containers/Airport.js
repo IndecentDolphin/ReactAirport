@@ -20,16 +20,19 @@ export class Airport extends React.Component {
     this.setState(
       { hangerCount: total + 1 }
     );
-    return <Plane />
   }
-
 
   changeName(newName){
     this.setState({name : newName});
   }
   
   render(){
-    console.log('rendering airport')
+
+    let planes = [];
+    for(let i = 0; i <= (this.state.hangerCount - 1); i++){
+      planes.push(<Plane key={i}/>);
+    }
+
     return (
       <div>
         <div className='col-3'></div>
@@ -39,6 +42,9 @@ export class Airport extends React.Component {
           <h2 className='content'> There are currently {this.state.hangerCount} planes available </h2>
         </div>
         <MenuBar updateHanger={this.updateHanger} />
+        <div>
+          {planes}
+        </div>
       </div>
     );
   }
