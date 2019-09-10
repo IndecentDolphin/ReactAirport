@@ -5,7 +5,7 @@ import {Airport} from  './Airport';
 function App() {
 
   return(
-    <div class>
+    <div>
       <Airport />
     </div>
     
