@@ -1,7 +1,6 @@
 import { shallow } from 'enzyme';
 import Plane from './../Plane';
 import React from 'react';
-import { render, fireEvent, getByTestId } from '@testing-library/react';
 
 describe('Plane', () =>   {
   it('Renders with a default state of false(grounded)', () => {

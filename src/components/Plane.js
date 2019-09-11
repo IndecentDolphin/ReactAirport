@@ -1,5 +1,5 @@
 import React from 'react';
-import {TakeoffLand} from './TakeOffLand'
+import {TakeOffLand} from './TakeOffLand'
 import { useState } from 'react';
 
 function Plane(){
@@ -8,7 +8,7 @@ function Plane(){
     <div className='content col-3'>
       <h2>Plane</h2>
       <p>Status: {isAirbourne ? "In-Air" : "Grounded"}</p>
-      <TakeoffLand />
+      <TakeOffLand handleClick={() => setStatus(true)} status={isAirbourne} />
     </div>
   );
 }
