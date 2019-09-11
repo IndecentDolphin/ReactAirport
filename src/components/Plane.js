@@ -1,8 +1,9 @@
 import React from 'react';
 import {TakeoffLand} from './TakeOffLand'
+import { useState } from 'react';
 
 function Plane(){
-  let isAirbourne = false;
+  const [isAirbourne, setStatus] = useState(false);
   return (
     <div className='content col-3'>
       <h2>Plane</h2>
