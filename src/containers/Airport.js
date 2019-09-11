@@ -42,10 +42,10 @@ export class Airport extends React.Component {
           <h2 className='content'> There are currently {this.state.hangerCount} planes available </h2>
         </div>
         <MenuBar updateHanger={this.updateHanger} />
-        <div>
-          {planes}
+        <div className='col-12'>
+            {planes}
+          </div>
         </div>
-      </div>
     );
   }
 }

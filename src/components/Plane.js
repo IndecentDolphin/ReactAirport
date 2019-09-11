@@ -4,7 +4,7 @@ import {TakeoffLand} from './TakeOffLand'
 function Plane(){
   let isAirbourne = false;
   return (
-    <div className='content'>
+    <div className='content col-3'>
       <h2>Plane</h2>
       <p>Status: {isAirbourne ? "In-Air" : "Grounded"}</p>
       <TakeoffLand />
